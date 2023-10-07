@@ -4,7 +4,7 @@ function SideNav() {
       <h1 className="font-bold text-2xl">MANGA</h1>
       <div>
         <h2>Welcome to Manga</h2>
-        <h2 className="animate-bounce">AUTHOR: AARON</h2>
+        <h2>AUTHOR: AARON</h2>
         <p>GITHUB</p>
         <p>LINKEDIN</p>
       </div>
