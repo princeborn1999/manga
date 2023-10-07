@@ -1,4 +1,9 @@
+import TopNavComponent from "../components/TopNav";
 function Tips() {
-  return <div></div>;
+  return (
+    <div>
+      <TopNavComponent />
+    </div>
+  );
 }
 export default Tips;

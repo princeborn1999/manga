@@ -2,25 +2,33 @@ import { Link } from "react-router-dom";
 
 function TopNavComponent() {
   return (
-    <div>
+    <div className="flex justify-center">
       <nav className="flex">
         <Link to="/">
-          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold bg-white hover:bg-gray-900 hover:text-white text-black rounded-xl">
+          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold ">
             HOME
           </li>
         </Link>
-        <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold bg-white hover:bg-gray-900 hover:text-white text-black rounded-xl">
-          COMPARISONS
-        </li>
-        <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold bg-gray-900 text-white rounded-xl">
-          RESOURCES
-        </li>
-        <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold bg-gray-900 text-white rounded-xl">
-          COLLECTION
-        </li>
-        <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold bg-gray-900 text-white rounded-xl">
-          TIPS
-        </li>
+        <Link to="/Comparisons">
+          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold">
+            COMPARISONS
+          </li>
+        </Link>
+        <Link to="/Resources">
+          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold">
+            RESOURCES
+          </li>
+        </Link>
+        <Link to="/Collection">
+          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold ">
+            COLLECTION
+          </li>
+        </Link>
+        <Link to="/Tips">
+          <li className="hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold ">
+            TIPS
+          </li>
+        </Link>
       </nav>
     </div>
   );
