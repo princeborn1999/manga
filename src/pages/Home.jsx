@@ -4,9 +4,10 @@ function Home() {
   const [isHovered, setIsHovered] = useState("");
   return (
     <div className="w-4/5 h-screen flex justify-center items-center">
+      {/* Home Nav */}
       <div className="bg-gray-900 w-96 h-96 z-10">
         <div className="flex h-1/2 w-full">
-          <Link to="/asdasd" className="w-full h-full">
+          <Link to="/Comparisons" className="w-full h-full">
             <div
               className={`h-full w-full  hover:scale-110 hover:-translate-x-10 hover:-translate-y-10 
                                         hover:shadow-lg cursor-pointer
@@ -19,10 +20,17 @@ function Home() {
               onMouseEnter={() => setIsHovered("block1")}
               onMouseLeave={() => setIsHovered("")}
             >
-              <h1>作品推薦</h1>
+              <div className="py-10 px-5">
+                <h1 className="text-2xl font-semibold text-center ">
+                  Comparisons
+                </h1>
+                <p className="text-gray-600 font-semibold text-center">
+                  Manga Recommendations
+                </p>
+              </div>
             </div>
           </Link>
-          <Link to="/qweqwe" className="w-full h-full">
+          <Link to="/Resources" className="w-full h-full">
             <div
               className={`h-full w-full  hover:scale-110 hover:translate-x-10 hover:-translate-y-10 
                             hover:shadow-lg cursor-pointer
@@ -35,12 +43,19 @@ function Home() {
               onMouseEnter={() => setIsHovered("block2")}
               onMouseLeave={() => setIsHovered("")}
             >
-              <h1>推薦頻道</h1>
+              <div className="py-10 px-5">
+                <h1 className="text-2xl font-semibold text-center ">
+                  Resources
+                </h1>
+                <p className="text-gray-600 font-semibold text-center">
+                  Drawing Tutorials
+                </p>
+              </div>
             </div>
           </Link>
         </div>
         <div className="flex h-1/2 w-full">
-          <Link to="/zxczxc" className="w-full h-full">
+          <Link to="/Collection" className="w-full h-full">
             <div
               className={`h-full w-full hover:scale-110 hover:-translate-x-10 hover:translate-y-10 
                                 hover:shadow-lg cursor-pointer
@@ -53,10 +68,17 @@ function Home() {
               onMouseEnter={() => setIsHovered("block3")}
               onMouseLeave={() => setIsHovered("")}
             >
-              <h1>繪畫素材</h1>
+              <div className="py-10 px-5">
+                <h1 className="text-2xl font-semibold text-center ">
+                  Collection
+                </h1>
+                <p className="text-gray-600 font-semibold text-center">
+                  Drawing References
+                </p>
+              </div>
             </div>
           </Link>
-          <Link to="/rfvrfv" className="w-full h-full">
+          <Link to="/Tips" className="w-full h-full">
             <div
               className={`h-full w-full hover:scale-110 hover:translate-x-10 hover:translate-y-10 
                                 hover:shadow-lg cursor-pointer
@@ -69,12 +91,17 @@ function Home() {
               onMouseEnter={() => setIsHovered("block4")}
               onMouseLeave={() => setIsHovered("")}
             >
-              <h1>額外技巧</h1>
+              <div className="py-10 px-5">
+                <h1 className="text-2xl font-semibold text-center ">Tips</h1>
+                <p className="text-gray-600 font-semibold text-center">
+                  Manga Drawing Techniques
+                </p>
+              </div>
             </div>
           </Link>
         </div>
       </div>
-      {/* 背後的漫畫背景 */}
+      {/* Background */}
       <div className="absolute h-full w-full z-0">
         <div className="w-full h-1/2 flex">
           <div
