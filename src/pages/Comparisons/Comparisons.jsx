@@ -2,6 +2,7 @@ import TopNavComponent from "../../components/TopNav";
 import ComparisonsSeries from "./ComparisonsSeries";
 import { Route } from "react-router-dom";
 import ComparisonsDetail from "./ComparisonsDetail";
+import { BrowserRouter } from "react-router-dom";
 function Comparisons() {
   return (
     <div className="w-full">
@@ -13,12 +14,14 @@ function Comparisons() {
         劇情作畫場景
         路人
     */}
-      <Route exact path="/Comparisons">
-        <ComparisonsSeries />
-      </Route>
-      <Route exact path="/Comparisons/detail">
-        <ComparisonsDetail />
-      </Route>
+      <BrowserRouter>
+        <Route exact path="/Comparisons">
+          <ComparisonsSeries />
+        </Route>
+        <Route exact path="/Comparisons/detail">
+          <ComparisonsDetail />
+        </Route>
+      </BrowserRouter>
     </div>
   );
 }
