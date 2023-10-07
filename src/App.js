@@ -1,7 +1,7 @@
 import SideNav from "./components/SideNav";
 import Home from "./pages/Home";
 import { Route } from "react-router-dom";
-import Comparisons from "./pages/Comparisons";
+import Comparisons from "./pages/Comparisons/Comparisons";
 import Collection from "./pages/Collection";
 import Resources from "./pages/Resources";
 import Tips from "./pages/Tips";

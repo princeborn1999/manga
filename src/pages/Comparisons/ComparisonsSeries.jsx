@@ -1,5 +1,5 @@
-import TopNavComponent from "../components/TopNav";
-function Comparisons() {
+import { Link } from "react-router-dom";
+function ComparisonsSeries() {
   const list = [
     {
       author: "Daromeon",
@@ -15,21 +15,13 @@ function Comparisons() {
     },
   ];
   return (
-    <div className="w-full">
-      <TopNavComponent />
-      {/* 
-        達露梅恩 - 拳願阿修羅
-        真島浩 - 妖精尾巴
-        鈴木央 - 七大罪
-        劇情作畫場景
-        路人
-    */}
-      <div>
-        {list.map((item, index) => (
-          <div
-            key={index}
-            className={`hover:bg-red-800 text-white bg-red-700 w-96 p-2 m-2`}
-          >
+    <div>
+      {list.map((item, index) => (
+        <div
+          key={index}
+          className={`hover:bg-red-800 text-white bg-red-700 w-96 p-2 m-2`}
+        >
+          <Link to="/Comparisons/detail">
             <div className="flex">
               <strong>Author:</strong>
               <p>{item.author}</p>
@@ -38,10 +30,10 @@ function Comparisons() {
               <strong>Series:</strong>
               <p>{item.series}</p>
             </div>
-          </div>
-        ))}
-      </div>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 }
-export default Comparisons;
+export default ComparisonsSeries;
