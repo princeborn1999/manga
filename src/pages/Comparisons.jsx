@@ -8,7 +8,9 @@ function Comparisons() {
         村田雄介
         達露梅恩
         尾田隆一郎
-        
+        真島浩
+
+        劇情作畫場景
         */}
     </div>
   );
