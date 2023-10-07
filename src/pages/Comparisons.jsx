@@ -24,7 +24,7 @@ function Comparisons() {
         劇情作畫場景
         路人
     */}
-      <div className="flex">
+      <div>
         {list.map((item, index) => (
           <div
             key={index}
