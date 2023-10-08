@@ -2,7 +2,7 @@ import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 function SideNav() {
   return (
-    <div className=" bg-gray-900 text-white h-screen z-10 py-10">
+    <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
       <div className="p-5">
         <h1 className="font-bold py-2 text-3xl text-center">MANGA</h1>
         <p>
