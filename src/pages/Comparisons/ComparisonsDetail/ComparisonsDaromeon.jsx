@@ -7,10 +7,22 @@ function ComparisonsDaromeon() {
       name: "Shadow",
     },
     {
+      name: "Fight",
+    },
+    {
+      name: "Food",
+    },
+    {
       name: "Background",
     },
     {
       name: "Crowd",
+    },
+    {
+      name: "Danger",
+    },
+    {
+      name: "Peace",
     },
     {
       name: "Rough draft",
