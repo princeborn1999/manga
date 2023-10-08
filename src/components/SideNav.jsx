@@ -35,9 +35,14 @@ function SideNav() {
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
             Author Info
           </p>
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
+          {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
             My Work
-          </p>
+          </p> */}
+          <a href="https://www.pixiv.net/users/52776176" target="_blank">
+            <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
+              My Work
+            </p>
+          </a>
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
             Q&A
           </p>

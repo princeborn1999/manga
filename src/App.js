@@ -11,11 +11,14 @@ function App() {
       <div className="w-1/5 z-10">
         <SideNav />
       </div>
-      <div className="w-4/5">
+      <div className="w-4/5 bg-slate-100">
         <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/Comparisons">
+          <Comparisons />
+        </Route>
+        <Route exact path="/Comparisons/details">
           <Comparisons />
         </Route>
         <Route exact path="/Resources">

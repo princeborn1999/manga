@@ -1,6 +1,6 @@
 import TopNavComponent from "../../components/TopNav";
 import ComparisonsSeries from "./ComparisonsSeries";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import ComparisonsDetail from "./ComparisonsDetail";
 import { BrowserRouter } from "react-router-dom";
 function Comparisons() {
@@ -14,14 +14,12 @@ function Comparisons() {
         劇情作畫場景
         路人
     */}
-      <BrowserRouter>
-        <Route exact path="/Comparisons">
-          <ComparisonsSeries />
-        </Route>
-        <Route exact path="/Comparisons/detail">
-          <ComparisonsDetail />
-        </Route>
-      </BrowserRouter>
+      <Route exact path="/Comparisons">
+        <ComparisonsSeries />
+      </Route>
+      <Route path="/Comparisons/details">
+        <ComparisonsDetail />
+      </Route>
     </div>
   );
 }
