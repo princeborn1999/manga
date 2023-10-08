@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/manga/static/css/main.0ca0982f.css",
-    "main.js": "/manga/static/js/main.4c9cddf1.js",
+    "main.css": "/manga/static/css/main.76b4dc04.css",
+    "main.js": "/manga/static/js/main.ff59aced.js",
     "static/js/787.042cb57d.chunk.js": "/manga/static/js/787.042cb57d.chunk.js",
     "static/media/sin01.jpg": "/manga/static/media/sin01.4b1d0cef5c05f36bd116.jpg",
+    "static/media/shadow02.jpg": "/manga/static/media/shadow02.3113c1707b9f4fd5dc92.jpg",
+    "static/media/shadow01.jpg": "/manga/static/media/shadow01.00e9e43b50529b370821.jpg",
     "static/media/fairy01.jpg": "/manga/static/media/fairy01.c9aebe37549cafcf0aac.jpg",
     "static/media/kengan01.jpg": "/manga/static/media/kengan01.1b9224e835310aa9f860.jpg",
     "static/media/mob01.jpg": "/manga/static/media/mob01.5dcb004b2576a4826a7f.jpg",
     "index.html": "/manga/index.html",
-    "main.0ca0982f.css.map": "/manga/static/css/main.0ca0982f.css.map",
-    "main.4c9cddf1.js.map": "/manga/static/js/main.4c9cddf1.js.map",
+    "main.76b4dc04.css.map": "/manga/static/css/main.76b4dc04.css.map",
+    "main.ff59aced.js.map": "/manga/static/js/main.ff59aced.js.map",
     "787.042cb57d.chunk.js.map": "/manga/static/js/787.042cb57d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ca0982f.css",
-    "static/js/main.4c9cddf1.js"
+    "static/css/main.76b4dc04.css",
+    "static/js/main.ff59aced.js"
   ]
 }
