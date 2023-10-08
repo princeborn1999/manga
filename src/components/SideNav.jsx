@@ -4,7 +4,7 @@ function SideNav() {
   return (
     <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
       <div className="p-5">
-        <h1 className="font-bold py-2 text-3xl text-center">MANGA</h1>
+        <h1 className="font-bold py-2 text-3xl text-center">MANGA MENTOR</h1>
         <p>
           Welcome to the world of manga mastery! Let's learn the art of manga
           from the expert.

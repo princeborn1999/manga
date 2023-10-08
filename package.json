@@ -2,7 +2,7 @@
   "name": "manga",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://princeborn1999.github.io/manga",
+  "homepage":"https://princeborn1999.github.io/mangamentor",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

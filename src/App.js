@@ -12,7 +12,7 @@ function App() {
         <SideNav />
       </div>
       <div className="w-4/5 bg-slate-100">
-        <Route exact path="/">
+        <Route exact path="/mangamentor">
           <Home />
         </Route>
         <Route exact path="/Comparisons">

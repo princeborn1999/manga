@@ -5,7 +5,7 @@ function TopNavComponent() {
   return (
     <div className="flex justify-center ">
       <nav className="flex rounded-2xl m-2 shadow-gray-400 shadow">
-        <Link to="/">
+        <Link to="/mangamentor">
           <li
             className={
               "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "

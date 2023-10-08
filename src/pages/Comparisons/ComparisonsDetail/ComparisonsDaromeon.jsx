@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Shadow from "./DaromeonList/Shadow";
 function ComparisonsDaromeon() {
-  const [tab, setTab] = useState("shadow");
+  const [tab, setTab] = useState("Shadow");
   const lists = [
     {
       name: "Shadow",
@@ -34,7 +34,7 @@ function ComparisonsDaromeon() {
         {lists.map((listItem, index) => (
           <div
             key={index}
-            className="px-4 py-2 hover:bg-gray-400 rounded-lg cursor-pointer"
+            className="px-4 py-2 hover:bg-gradient-to-r hover:from-gray-400 rounded-lg cursor-pointer"
             onClick={() => {
               setTab(listItem.name);
             }}
