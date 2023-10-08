@@ -34,9 +34,9 @@ function Resources() {
         </div>
         <div className="p-5">
           {channels.map((channel, index) => (
-            <div key={index} className="p-2 w-48 bg-slate-300 m-2">
+            <div key={index}>
               <a href={channel.url} target="_blank">
-                {channel.name}
+                <div className="p-2 w-48 bg-slate-300 m-2">{channel.name}</div>
               </a>
             </div>
           ))}

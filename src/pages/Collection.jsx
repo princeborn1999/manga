@@ -17,14 +17,16 @@ function Collection() {
     可以filter 條件
   */}
       <TopNavComponent />
-      <div>
+      {/* <div>
         <input
           type="text"
           className="w-36 border border-gray-300 mx-2 rounded-lg"
         />
         <button>Search</button>
+      </div> */}
+      <div className="flex justify-center pt-48 text-2xl">
+        <p>Coming Soon</p>
       </div>
-      <div></div>
     </div>
   );
 }
