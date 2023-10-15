@@ -33,6 +33,9 @@ function SideNav() {
         </div>
         <div className="py-5 px-5">
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
+            Update Log
+          </p>
+          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
             Author Info
           </p>
           {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">

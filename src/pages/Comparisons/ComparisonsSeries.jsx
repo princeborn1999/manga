@@ -5,10 +5,10 @@ function ComparisonsSeries() {
       author: "Daromeon",
       series: "Kengan Ashura (ケンガンアシュラ) ",
     },
-    // {
-    //   author: "Hiro Mashima",
-    //   series: "Fairy Tail (フェアリーテイル) ",
-    // },
+    {
+      author: "Hiro Mashima",
+      series: "Fairy Tail (フェアリーテイル) ",
+    },
     // {
     //   author: "Nakaba Suzuki",
     //   series: "The Seven Deadly Sins (七つの大罪) ",
@@ -19,7 +19,7 @@ function ComparisonsSeries() {
       {list.map((item, index) => (
         <div
           key={index}
-          className={`hover:bg-gradient-to-r hover:from-purple-700 hover:to-red-700  text-white bg-purple-700 w-96 p-2 m-2`}
+          className={`hover:bg-gradient-to-r hover:from-purple-700 hover:to-red-700  text-white bg-purple-700 w-96 p-2 m-2 rounded-lg p-4`}
         >
           <Link to={`/Comparisons/details?author=${item.author}`}>
             <div className="flex">
