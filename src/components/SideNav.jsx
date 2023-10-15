@@ -1,5 +1,6 @@
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+
 function SideNav() {
   return (
     <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
