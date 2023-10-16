@@ -1,7 +1,8 @@
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
+import { useState } from "react";
 function SideNav() {
+  const [ openModal, setOpenModal] = useState('')
   return (
     <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
       <div className="p-5">
@@ -22,7 +23,6 @@ function SideNav() {
             Visit My Github Profile
             <FaGithubAlt className="text-2xl pl-2" />
           </a>
-
           <a
             href="https://www.linkedin.com/in/aaron-prince-4b9475230/"
             target="_blank"
@@ -33,10 +33,12 @@ function SideNav() {
           </a>
         </div>
         <div className="py-5 px-5">
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
-            Update Log
+          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
+            onClick={() => setOpenModal('DevelopLog')}>
+            Develop Log
           </p>
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
+          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
+            onClick={() => setOpenModal('AuthorInfo')}>
             Author Info
           </p>
           {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
@@ -47,7 +49,8 @@ function SideNav() {
               My Work
             </p>
           </a>
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
+          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
+            onClick={() => setOpenModal('QA')}>
             Q&A
           </p>
         </div>

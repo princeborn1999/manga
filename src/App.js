@@ -5,23 +5,11 @@ import Comparisons from "./pages/Comparisons/Comparisons";
 import Collection from "./pages/Collection";
 import Resources from "./pages/Resources";
 import Tips from "./pages/Tips";
-import ReactModal from "react-modal";
-
+import Modal from "./components/Modal";
 function App() {
   return (
     <div>
-      <ReactModal
-        isOpen={true}
-        className={
-          " bg-gray-900 bg-zinc-800 z-50 w-1/2 h-96 shadow text-white p-5"
-        }
-        shouldCloseOnEsc={true}
-      >
-        <div className="flex justify-center">
-          <h1>Tsdadasd</h1>
-          <p>asdasdasdasasdasdsadasd</p>
-        </div>
-      </ReactModal>
+      <Modal /> 
       <div className="flex">
         <div className="w-1/5 z-10">
           <SideNav />

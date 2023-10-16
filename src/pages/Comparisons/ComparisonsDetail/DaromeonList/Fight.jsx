@@ -3,8 +3,9 @@ function Fight() {
   return (
     <div>
       <p>
-        {/* How can I create shadow effects? Daromeon frequently employs a
-        'whisker-like' technique to outline the edges of shadows. */}
+        Daromeon often uses broad, white strokes to substitute for the fist, 
+        <br></br>
+        effectively conveying both a sense of speed and the impact of a punch.
       </p>
 
       <div className="flex">
