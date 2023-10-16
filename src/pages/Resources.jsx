@@ -33,13 +33,21 @@ function Resources() {
           </p>
         </div>
         <div className="p-5">
-          {channels.map((channel, index) => (
-            <div key={index}>
-              <a href={channel.url} target="_blank">
-                <div className="p-2 w-48 bg-slate-300 m-2">{channel.name}</div>
-              </a>
-            </div>
-          ))}
+          <p className="text-lg">Click to visit youtube channel</p>
+          <div className="flex">
+            {channels.map((channel, index) => (
+              <div key={index}>
+                <a href={channel.url} target="_blank">
+                  <div
+                    className="p-2 w-48 bg-gradient-to-r from-slate-300 
+                              to-slate-400 hover:to-red-600 text-gray-900 m-2"
+                  >
+                    {channel.name}
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

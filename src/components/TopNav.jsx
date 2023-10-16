@@ -40,7 +40,7 @@ function TopNavComponent() {
             COLLECTION
           </li>
         </Link>
-        <Link to="/Tips">
+        {/* <Link to="/Tips">
           <li
             className={
               "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
@@ -48,7 +48,7 @@ function TopNavComponent() {
           >
             TIPS
           </li>
-        </Link>
+        </Link> */}
       </nav>
     </div>
   );

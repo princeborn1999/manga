@@ -9,7 +9,7 @@ import Modal from "./components/Modal";
 function App() {
   return (
     <div>
-      <Modal /> 
+      {/* <Modal />  */}
       <div className="flex">
         <div className="w-1/5 z-10">
           <SideNav />
