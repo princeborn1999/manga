@@ -6,10 +6,12 @@ import Collection from "./pages/Collection";
 import Resources from "./pages/Resources";
 import Tips from "./pages/Tips";
 import Modal from "./components/Modal";
+import { ModalProvider } from "./contexts/ModalContext";
 function App() {
   return (
+    <ModalProvider>
     <div>
-      {/* <Modal />  */}
+      <Modal /> 
       <div className="flex">
         <div className="w-1/5 z-10">
           <SideNav />
@@ -36,6 +38,7 @@ function App() {
         </div>
       </div>
     </div>
+    </ModalProvider>
   );
 }
 

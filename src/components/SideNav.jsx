@@ -1,8 +1,11 @@
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
+import { useModal } from "../contexts/ModalContext";
 function SideNav() {
-  const [ openModal, setOpenModal] = useState('')
+  const { dispatch } = useModal();
+  const openModal = (modalType) => {
+    dispatch({type: 'OPEN_MODAL',payload: {modalType}})
+  }
   return (
     <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
       <div className="p-5">
@@ -34,11 +37,11 @@ function SideNav() {
         </div>
         <div className="py-5 px-5">
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
-            onClick={() => setOpenModal('DevelopLog')}>
+            onClick={() => openModal('DevelopLog')}>
             Develop Log
           </p>
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
-            onClick={() => setOpenModal('AuthorInfo')}>
+            onClick={() => openModal('AuthorInfo')}>
             Author Info
           </p>
           {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
@@ -50,7 +53,7 @@ function SideNav() {
             </p>
           </a>
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
-            onClick={() => setOpenModal('QA')}>
+            onClick={() => openModal('QA')}>
             Q&A
           </p>
         </div>
