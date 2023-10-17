@@ -8,13 +8,14 @@ function Background() {
   return (
     <div>
       <p>
-        {/* How can I create shadow effects? Daromeon frequently employs a
-        'whisker-like' technique to outline the edges of shadows. */}
+      Hiro-san frequently crafts breathtaking scenes, such as vast cities, grand castles, 
+      and towering mountains, which enhance the entire page with their awe-inspiring presence.
       </p>
-      <p>Outside</p>
       <div className="flex">
         <img className="w-full p-2" src={ft01} alt="" />
       </div>
+      <p>White and black are employed to compose the background of buildings,
+         with a emphasis on the use of white, particularly in the scenery.</p>
       <div className="flex">
         <img className="w-1/2 p-2" src={ft02} alt="" />
       </div>

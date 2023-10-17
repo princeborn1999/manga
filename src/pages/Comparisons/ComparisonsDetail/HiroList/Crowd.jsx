@@ -3,11 +3,10 @@ function Crowd() {
   return (
     <div>
       <p>
-        {/* How can I create shadow effects? Daromeon frequently employs a
-        'whisker-like' technique to outline the edges of shadows. */}
+        The movements and actions of the crowd are straightforward and devoid of any exaggerated overacting
       </p>
       <div className="flex">
-        <img className="w-1/2 p-2" src={ft03} alt="" />
+        <img className="w-2/3 p-2" src={ft03} alt="" />
       </div>
     </div>
   );
