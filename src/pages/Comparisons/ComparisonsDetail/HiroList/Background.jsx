@@ -12,15 +12,15 @@ function Background() {
       and towering mountains, which enhance the entire page with their awe-inspiring presence.
       </p>
       <div className="flex">
-        <img className="w-full p-2" src={ft01} alt="" />
+        <img className="h-96 p-2" src={ft01} alt="" />
       </div>
       <p>White and black are employed to compose the background of buildings,
          with a emphasis on the use of white, particularly in the scenery.</p>
       <div className="flex">
-        <img className="w-1/2 p-2" src={ft02} alt="" />
+        <img className="w-96 p-2" src={ft02} alt="" />
       </div>
 
-      <div className="flex">
+      {/* <div className="flex">
         <img className="w-1/2 p-2" src={ft04} alt="" />
       </div>
       <div className="flex">
@@ -31,8 +31,7 @@ function Background() {
       </div>
       <div className="flex">
         <img className="w-1/2 p-2" src={ft07} alt="" />
-      </div>
-      <p>Inner</p>
+      </div> */}
     </div>
   );
 }
