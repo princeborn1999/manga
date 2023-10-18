@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mangamentor/static/css/main.a8da5955.css",
-    "main.js": "/mangamentor/static/js/main.2cafd0a8.js",
+    "main.css": "/mangamentor/static/css/main.32bfe966.css",
+    "main.js": "/mangamentor/static/js/main.359b0481.js",
     "static/js/787.042cb57d.chunk.js": "/mangamentor/static/js/787.042cb57d.chunk.js",
     "static/media/ft01.jpg": "/mangamentor/static/media/ft01.3f6b3be803f3a22dfaf9.jpg",
     "static/media/bg01.jpg": "/mangamentor/static/media/bg01.2b1fa29972a9497f9548.jpg",
@@ -12,6 +12,7 @@
     "static/media/ft04.jpg": "/mangamentor/static/media/ft04.c241af129150fa1b9cfd.jpg",
     "static/media/ft02.jpg": "/mangamentor/static/media/ft02.fe2e7f172a36743dd695.jpg",
     "static/media/fight01.jpg": "/mangamentor/static/media/fight01.d32954dec22dde5dc235.jpg",
+    "static/media/fairytail.jpg": "/mangamentor/static/media/fairytail.01706e42006a284e65af.jpg",
     "static/media/sin01.jpg": "/mangamentor/static/media/sin01.4b1d0cef5c05f36bd116.jpg",
     "static/media/shadow02.jpg": "/mangamentor/static/media/shadow02.3113c1707b9f4fd5dc92.jpg",
     "static/media/shadow01.jpg": "/mangamentor/static/media/shadow01.00e9e43b50529b370821.jpg",
@@ -25,16 +26,17 @@
     "static/media/danger01.jpg": "/mangamentor/static/media/danger01.2bb6306d98733b40e4f1.jpg",
     "static/media/crowd01.jpg": "/mangamentor/static/media/crowd01.f8a3ff47ff197eb70929.jpg",
     "static/media/draft02.jpg": "/mangamentor/static/media/draft02.18183e4cbc154ac7aaa0.jpg",
+    "static/media/kengan.jpg": "/mangamentor/static/media/kengan.8d2a929c7a61dfe8f542.jpg",
     "static/media/bg04.jpg": "/mangamentor/static/media/bg04.cac380e69bc2c4cd2c80.jpg",
     "static/media/mob01.jpg": "/mangamentor/static/media/mob01.5dcb004b2576a4826a7f.jpg",
     "static/media/crowd02.jpg": "/mangamentor/static/media/crowd02.ef2e1d654049630ffa57.jpg",
     "index.html": "/mangamentor/index.html",
-    "main.a8da5955.css.map": "/mangamentor/static/css/main.a8da5955.css.map",
-    "main.2cafd0a8.js.map": "/mangamentor/static/js/main.2cafd0a8.js.map",
+    "main.32bfe966.css.map": "/mangamentor/static/css/main.32bfe966.css.map",
+    "main.359b0481.js.map": "/mangamentor/static/js/main.359b0481.js.map",
     "787.042cb57d.chunk.js.map": "/mangamentor/static/js/787.042cb57d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8da5955.css",
-    "static/js/main.2cafd0a8.js"
+    "static/css/main.32bfe966.css",
+    "static/js/main.359b0481.js"
   ]
 }
