@@ -5,7 +5,7 @@ import ComparisonsDetail from "./ComparisonsDetail";
 import { BrowserRouter } from "react-router-dom";
 function Comparisons() {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <TopNavComponent />
       {/* 
         達露梅恩 - 拳願阿修羅

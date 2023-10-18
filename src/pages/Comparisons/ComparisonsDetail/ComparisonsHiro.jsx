@@ -2,7 +2,7 @@ import { useState } from "react";
 import Background from "./HiroList/Background";
 import Crowd from "./HiroList/Crowd";
 function ComparisonsHiro() {
-  const [tab, setTab] = useState("Shadow");
+  const [tab, setTab] = useState("Background");
   const lists = [
     {
       name: "Background",
