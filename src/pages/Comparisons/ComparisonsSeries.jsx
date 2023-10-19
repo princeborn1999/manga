@@ -19,7 +19,7 @@ function ComparisonsSeries() {
     // },
   ];
   return (
-    <div className="flex h-full pb-10 px-10">
+    <div className="xl:flex h-full pb-10 px-10">
       {list.map((item, index) => (
         <div
          className="w-full h-full"

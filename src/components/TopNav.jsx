@@ -3,7 +3,7 @@ import { useState } from "react";
 function TopNavComponent() {
   const [active, setActive] = useState("");
   return (
-    <div className="flex justify-center ">
+    <div className="hidden sm:flex justify-center">
       <nav className="flex rounded-2xl m-2 shadow-gray-400 shadow">
         <Link to="/mangamentor">
           <li

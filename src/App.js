@@ -16,7 +16,7 @@ function App() {
         <div className="w-1/5 z-10">
           <SideNav />
         </div>
-        <div className="w-4/5 bg-slate-100">
+        <div className="w-4/5 bg-slate-100 min-w-min">
           <Route exact path="/mangamentor">
             <Home />
           </Route>

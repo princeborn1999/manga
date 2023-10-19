@@ -7,7 +7,7 @@ function SideNav() {
     dispatch({type: 'OPEN_MODAL',payload: {modalType}})
   }
   return (
-    <div className=" bg-gray-900 text-white h-full min-h-screen z-10 py-10">
+    <div className="hidden sm:flex bg-gray-900 text-white h-full min-h-screen z-10 py-10">
       <div className="p-5">
         <h1 className="font-bold py-2 text-3xl text-center">MANGA MENTOR</h1>
         <p>
