@@ -33,7 +33,6 @@ function Resources() {
           </p>
         </div>
         <div className="p-5">
-          <p className="text-lg">Click to visit youtube channel</p>
           <div className="flex">
             {channels.map((channel, index) => (
               <div key={index}>
@@ -48,6 +47,18 @@ function Resources() {
               </div>
             ))}
           </div>
+        </div>
+        <div>
+          youtube channel
+        </div>
+        <div>
+          BOOK & amazon link
+        </div>
+        <div>
+          pixiv
+        </div>
+        <div>
+          fanbox
         </div>
       </div>
     </div>
