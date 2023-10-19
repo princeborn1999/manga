@@ -26,11 +26,18 @@ function Collection() {
   */}
       <TopNavComponent />
       <div className="justify-center flex pt-5" aria-label="search-bar">
+        <label htmlFor="" className="text-2xl">filter  :</label>
+        <select class="appearance-none p-2">
+          <option>All</option>
+          <option>Shadow</option>
+          <option>Background</option>
+          <option>Crowd</option>
+        </select>
         <input
           type="text"
-          className="w-48 border border-gray-300 mx-2 rounded-lg"
+          className="w-48 border border-gray-300 mx-2 rounded-lg "
         />
-        <button className="p-2 bg-slate-200 rounded-lg">Search</button>
+        <button className="mx-2 p-2 bg-slate-200 rounded-lg">Search</button>
       </div>
 
 

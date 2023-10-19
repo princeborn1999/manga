@@ -39,13 +39,30 @@ function Modal(){
             </div>
         )
     }
+    const Feedback = () =>{
+        return(
+            <div className="z-50 flex w-1/3 h-2/3 fixed p-5 bg-slate-900 text-white shadow-lg">
+                <div className="justify-center">
+                    <h2>Please don't hesitate to share your thoughts with me.</h2>
+                    <div>
+                    <textarea name="thoughts" id="" cols="30" rows="10" 
+                              className="text-pink-500 caret-pink-500 resize-none p-5">
+                    </textarea>
+                    </div>
+                    <button>Submit</button>
+                    <button className="border-white border-2 text-white px-2" onClick={closeModal}>X</button>
+                </div>
+            </div>
+        )
+    }
     if(!state.modalType) return null
     return(
         <div className="fixed w-full h-full z-30 flex justify-center items-center">
             {
                 state.modalType ==='DevelopLog' && <DevelopLog /> ||
                 state.modalType === 'AuthorInfo' && <AuthorInfo /> ||
-                state.modalType === 'QA' && <QA /> 
+                state.modalType === 'QA' && <QA /> ||
+                state.modalType === 'Feedback' && <Feedback /> 
             }
             <div className="w-full h-full bg-black opacity-50"> </div>
         </div>

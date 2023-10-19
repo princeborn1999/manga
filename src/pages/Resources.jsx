@@ -1,3 +1,8 @@
+import BookCarousel from './Resources/BookCarousel';
+import FanboxCarousel from './Resources/FanboxCarousel';
+import PixivCarousel from './Resources/PixivCarousel';
+import YoutubeCarousel from './Resources/YoutubeCarousel';
+
 import TopNavComponent from "../components/TopNav";
 function Resources() {
   const channels = [
@@ -48,18 +53,19 @@ function Resources() {
             ))}
           </div>
         </div>
-        <div>
-          youtube channel
+        <div className='p-5'>
+          <YoutubeCarousel />
         </div>
-        <div>
-          BOOK & amazon link
+        <div className='p-5'>
+          <BookCarousel />
         </div>
-        <div>
-          pixiv
+        <div className='p-5'>
+          <FanboxCarousel />
         </div>
-        <div>
-          fanbox
+        <div className='p-5'>
+          <PixivCarousel />
         </div>
+  
       </div>
     </div>
   );

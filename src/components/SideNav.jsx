@@ -56,6 +56,10 @@ function SideNav() {
             onClick={() => openModal('QA')}>
             Q&A
           </p>
+          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
+            onClick={() => openModal('Feedback')}>
+            Feedback
+          </p>
         </div>
         <footer className="text-sm text-center">
           <p>Copyright © 2023 AaronPrince.</p>
