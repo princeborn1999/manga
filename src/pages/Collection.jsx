@@ -1,5 +1,19 @@
 import TopNavComponent from "../components/TopNav";
+import axios from 'axios';
+import { useState } from "react";
 function Collection() {
+  const [inputValue, setInputValue] = useState('');
+  const apiURL = 'http://localhost:3001/'
+  function clickToSearch(){
+    const req = {
+      name: inputValue
+    }
+    axios.post(apiURL+'/api/collection',{ data: req }).then(
+      (res)=>{
+        console.log('asdsad')
+      }
+    )
+  }
   const recommendBar = [
     {
       name: 'shadow',
@@ -27,17 +41,19 @@ function Collection() {
       <TopNavComponent />
       <div className="justify-center flex pt-5" aria-label="search-bar">
         <label htmlFor="" className="text-2xl">filter  :</label>
-        <select class="appearance-none p-2">
+        <select className="appearance-none p-2">
           <option>All</option>
           <option>Shadow</option>
           <option>Background</option>
           <option>Crowd</option>
         </select>
         <input
+          value={inputValue}
           type="text"
+          onChange={(e) => setInputValue(e.target.value)}
           className="w-48 border border-gray-300 mx-2 rounded-lg "
         />
-        <button className="mx-2 p-2 bg-slate-200 rounded-lg">Search</button>
+        <button className="mx-2 p-2 bg-slate-200 rounded-lg" onClick={()=>clickToSearch()}>Search</button>
       </div>
 
 
