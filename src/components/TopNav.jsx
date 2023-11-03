@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState , useEffect } from "react";
+import { useConfig } from "../contexts/ConfigContext";
 function TopNavComponent() {
-  const [active, setActive] = useState("");
+  const { state } = useConfig();
+    
+  const [showAddCollection, setShowAddCollection] = useState("");
+  useEffect(()=>{
+    if(state.isOpen){
+      setShowAddCollection(true)
+    }
+  })
   return (
     <div className="hidden sm:flex justify-center">
       <nav className="flex rounded-2xl m-2 shadow-gray-400 shadow">
@@ -40,6 +48,17 @@ function TopNavComponent() {
             COLLECTION
           </li>
         </Link>
+        {showAddCollection &&
+          <Link to="/AddCollection">
+            <li
+              className={
+                "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
+              }
+            >
+              DEVELOPMODE
+            </li>
+        </Link>
+        }
         {/* <Link to="/Tips">
           <li
             className={

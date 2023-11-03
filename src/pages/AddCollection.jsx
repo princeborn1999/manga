@@ -1,7 +1,14 @@
+import TopNavComponent from "../components/TopNav";
+
 function AddCollection(){
     return(
         <div>
-            asds
+            <TopNavComponent />
+            <div>
+                upload image,
+                label,
+                submit,cancel
+            </div>
         </div>
     )
 }
