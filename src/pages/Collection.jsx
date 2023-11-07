@@ -1,18 +1,23 @@
 import TopNavComponent from "../components/TopNav";
 import axios from 'axios';
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import collectionCardService from "../services/collectionCard.service";
 function Collection() {
   const [inputValue, setInputValue] = useState('');
-  const apiURL = 'http://localhost:3001/'
+  useEffect(()=>{
+    //  一開始的首次全查詢
+    collectionCardService.getAllCard()
+      .then("Getting all card.")
+      .catch((err)=>{
+        console.error(err)
+      })
+  },[])
+
   function clickToSearch(){
     const req = {
       name: inputValue
     }
-    axios.post(apiURL+'/api/collection',{ data: req }).then(
-      (res)=>{
-        console.log('asdsad')
-      }
-    )
+    
   }
   const recommendBar = [
     {

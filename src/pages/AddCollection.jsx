@@ -19,6 +19,10 @@ function AddCollection(){
                     <p className="p-2">Name:</p>
                     <input type="text"className="p-2 rounded"/>
                 </div>
+                <div className="flex my-2">
+                    <p className="p-2">Label:</p>
+                    <input type="text"className="p-2 rounded"/>
+                </div>
                 <button className="bg-green-400 m-2 p-2">Sumbit</button>
                 <button className="bg-red-400 m-2 p-2">Cancel</button>
                 <div>
