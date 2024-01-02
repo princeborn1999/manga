@@ -53,7 +53,7 @@ function Resources() {
             ))}
           </div>
         </div>
-        <div className='p-5'>
+        {/* <div className='p-5'>
           <YoutubeCarousel />
         </div>
         <div className='p-5'>
@@ -64,7 +64,7 @@ function Resources() {
         </div>
         <div className='p-5'>
           <PixivCarousel />
-        </div>
+        </div> */}
   
       </div>
     </div>
