@@ -39,7 +39,7 @@ function TopNavComponent() {
             RESOURCES
           </li>
         </Link>
-        <Link to="/Collection">
+        {/* <Link to="/Collection">
           <li
             className={
               "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
@@ -48,7 +48,8 @@ function TopNavComponent() {
             COLLECTION
           </li>
         </Link>
-        {showAddCollection &&
+        {
+          showAddCollection &&
           <Link to="/AddCollection">
             <li
               className={
@@ -58,7 +59,7 @@ function TopNavComponent() {
               DEVELOPMODE
             </li>
         </Link>
-        }
+        } */}
         {/* <Link to="/Tips">
           <li
             className={
