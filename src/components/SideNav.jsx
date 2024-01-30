@@ -55,6 +55,7 @@ function SideNav() {
           </p>
         </div>
         <footer className="text-sm text-center">
+          <p>Last release: 2024.01.30</p>
           <p>Copyright © 2023 AaronPrince.</p>
           <p>All Rights Reserved.</p>
         </footer>
