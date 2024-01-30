@@ -32,7 +32,7 @@ function Modal(){
                             Hi there! I'm AaronPrince,<br/> 
                             a software engineer working at Systex.<br/> 
                             With a keen interest and in-depth knowledge of manga,<br/>
-                            This website is a collection of works by manga artists. <br/>
+                            This website is a collection of works by famous artists. <br/>
                             It aims to highlight the distinct expression styles of different artists. <br />
                             Additionally, there are a few points that might assist you in creating your own manga.<br/>
                             I hope this website can be a valuable resource for you.<br/>
