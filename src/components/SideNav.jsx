@@ -51,7 +51,7 @@ function SideNav() {
           </a>
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
             onClick={() => openModal('QA')}>
-            Q&A
+            Questions
           </p>
         </div>
         <footer className="text-sm text-center">
