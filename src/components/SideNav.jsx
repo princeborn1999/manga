@@ -36,17 +36,14 @@ function SideNav() {
           </a>
         </div>
         <div className="py-5 px-5">
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
+          {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
             onClick={() => openModal('DevelopLog')}>
             Develop Log
-          </p>
+          </p> */}
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
             onClick={() => openModal('AuthorInfo')}>
             Author Info
           </p>
-          {/* <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
-            My Work
-          </p> */}
           <a href="https://www.pixiv.net/users/52776176" target="_blank">
             <p className="hover:bg-white hover:text-black my-2 p-2 border border-white">
               My Work
@@ -55,10 +52,6 @@ function SideNav() {
           <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
             onClick={() => openModal('QA')}>
             Q&A
-          </p>
-          <p className="hover:bg-white hover:text-black my-2 p-2 border border-white"
-            onClick={() => openModal('Feedback')}>
-            Feedback
           </p>
         </div>
         <footer className="text-sm text-center">

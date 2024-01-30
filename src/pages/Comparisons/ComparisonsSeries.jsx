@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
 import kengan from '../../assets/comparison/kengan.jpg'
 import fairytail from '../../assets/comparison/fairytail.jpg'
+import onepunch from '../../assets/onepunch_origin/onepunch01.jpg'
 function ComparisonsSeries() {
   const list = [
     {
       author: "Daromeon",
       series: "Kengan Ashura (ケンガンアシュラ) ",
       image: kengan
+    },
+    {
+      author: "Hiro Mashima",
+      series: "Fairy Tail (フェアリーテイル) ",
+      image: fairytail
+    },
+    {
+      author: "One",
+      series: "One Punch Man(ワンパンマン) ",
+      image: onepunch
     },
     {
       author: "Hiro Mashima",
