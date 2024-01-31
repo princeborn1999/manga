@@ -9,7 +9,9 @@ function ComparisonsDetail() {
     <div className="p-5">
       {author === "Daromeon" && <ComparisonsDaromeon />}
       {author === "Hiro Mashima" && <ComparisonsHiro />}
-      {author === "Nakaba Suzuki" && <div>Coming soon!</div>}
+      {author === "One" && <div>Coming soon!</div>}
+      {/* {	Hajime Sawada / } */}
+      {/* {	Tsukasa / } */}
     </div>
   );
 }
