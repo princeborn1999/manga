@@ -3,7 +3,7 @@ import { useState , useEffect } from "react";
 import { useConfig } from "../contexts/ConfigContext";
 function TopNavComponent() {
   const { state } = useConfig();
-    
+  const topNavliClass = "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
   const [showAddCollection, setShowAddCollection] = useState("");
   useEffect(()=>{
     if(state.isOpen){
@@ -12,38 +12,31 @@ function TopNavComponent() {
   })
   return (
     <div className="hidden sm:flex justify-center">
-      <nav className="flex rounded-2xl m-2 shadow-gray-400 shadow">
+      <nav className="flex rounded-3xl m-2 shadow-gray-400 shadow bg-black text-white">
         <Link to="/mangamentor">
           <li
-            className={
-              "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
-            }
+            className={topNavliClass}
           >
             HOME
           </li>
         </Link>
         <Link to="/Comparisons">
           <li
-            className={`
-             hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold`}
+            className={topNavliClass}
           >
             COMPARISONS
           </li>
         </Link>
         <Link to="/Resources">
           <li
-            className={
-              "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold"
-            }
+            className={topNavliClass}
           >
             RESOURCES
           </li>
         </Link>
         <Link to="/Collection">
           <li
-            className={
-              "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
-            }
+            className={topNavliClass}
           >
             COLLECTION
           </li>
@@ -63,9 +56,7 @@ function TopNavComponent() {
         } */}
         <Link to="/Tips">
           <li
-            className={
-              "hover:animate-pulse p-2 m-2 justify-center flex w-36 font-bold "
-            }
+            className={topNavliClass}
           >
             TIPS
           </li>
