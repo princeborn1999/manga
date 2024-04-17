@@ -1,39 +1,18 @@
 import { useState } from "react";
-import Shadow from "./DaromeonList/Shadow";
-import Fight from "./DaromeonList/Fight";
-import Background from "./DaromeonList/Background";
-import Crowd from "./DaromeonList/Crowd";
-import Danger from "./DaromeonList/Danger";
-import RoughDraft from "./DaromeonList/RoughDraft";
 function ComparisonsDaromeon() {
-  const [tab, setTab] = useState("Shadow");
+  const [tab, setTab] = useState("Character");
   const lists = [
     {
-      name: "Shadow",
+      name: "Character",
     },
     {
       name: "Fight",
     },
     {
+      name: "Vibe",
+    },
+    {
       name: "Background",
-    },
-    {
-      name: "Crowd",
-    },
-    {
-      name: "Power",
-    },
-    {
-      name: "Danger",
-    },
-    {
-      name: "Face",
-    },
-    {
-      name: "Injured",
-    },
-    {
-      name: "Running",
     },
     {
       name: "Rough draft",
@@ -57,12 +36,12 @@ function ComparisonsDaromeon() {
         ))}
       </div>
       <div className="p-2 w-4/5">
-        {tab === "Shadow" && <Shadow />}
+        {/* {tab === "Shadow" && <Shadow />}
         {tab === "Fight" && <Fight />}
         {tab === "Background" && <Background />}
         {tab === "Crowd" && <Crowd />}
         {tab === "Danger" && <Danger />}
-        {tab === "Rough draft" && <RoughDraft />}
+        {tab === "Rough draft" && <RoughDraft />} */}
       </div>
     </div>
   );

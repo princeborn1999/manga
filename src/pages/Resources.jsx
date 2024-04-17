@@ -1,8 +1,3 @@
-import BookCarousel from './Resources/BookCarousel';
-import FanboxCarousel from './Resources/FanboxCarousel';
-import PixivCarousel from './Resources/PixivCarousel';
-import YoutubeCarousel from './Resources/YoutubeCarousel';
-
 import TopNavComponent from "../components/TopNav";
 function Resources() {
   const channels = [
@@ -28,6 +23,7 @@ function Resources() {
       <TopNavComponent />
       {/* 
     Youtube Channel  直齋 深雪魔王 達露梅恩 真島浩
+   TODO:挑幾LIST在上面
   */}
       <div className="p-5">
         <div className="mx-48 p-5 border-2 border-black">
@@ -53,19 +49,6 @@ function Resources() {
             ))}
           </div>
         </div>
-        {/* <div className='p-5'>
-          <YoutubeCarousel />
-        </div>
-        <div className='p-5'>
-          <BookCarousel />
-        </div>
-        <div className='p-5'>
-          <FanboxCarousel />
-        </div>
-        <div className='p-5'>
-          <PixivCarousel />
-        </div> */}
-  
       </div>
     </div>
   );

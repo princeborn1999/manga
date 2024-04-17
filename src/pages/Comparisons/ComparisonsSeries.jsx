@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import kengan from '../../assets/comparison/kengan.jpg'
 import fairytail from '../../assets/comparison/fairytail.jpg'
 import onepunch from '../../assets/onepunch_origin/onepunch01.jpg'
-import sengoku04 from '../../assets/sengoku/sengoku04.jpg'
-import frieren02 from '../../assets/frieren/frieren02_.jpg'
 function ComparisonsSeries() {
   const list = [
     {
@@ -20,16 +18,6 @@ function ComparisonsSeries() {
       author: "One",
       series: "One Punch Man(ワンパンマン) ",
       image: onepunch
-    },
-    {
-      author: "漫画：沢田一/原作：夾竹桃・平沢下戸",
-      series: "Sengoku Komachi Kuroutan (戦国小町苦労譚)",
-      image: sengoku04
-    },
-    {
-      author: "山田鐘人/アベツカサ",
-      series: "Frieren: Beyond Journey's End(葬送のフリーレン) ",
-      image: frieren02
     }
   ];
   return (

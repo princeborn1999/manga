@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import ComparisonsDaromeon from "./ComparisonsDetail/ComparisonsDaromeon";
 import ComparisonsHiro from "./ComparisonsDetail/ComparisonsHiro";
+
 function ComparisonsDetail() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -10,8 +11,6 @@ function ComparisonsDetail() {
       {author === "Daromeon" && <ComparisonsDaromeon />}
       {author === "Hiro Mashima" && <ComparisonsHiro />}
       {author === "One" && <div>Coming soon!</div>}
-      {/* {	Hajime Sawada / } */}
-      {/* {	Tsukasa / } */}
     </div>
   );
 }

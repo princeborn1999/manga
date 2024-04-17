@@ -1,35 +1,18 @@
 import { useState } from "react";
-import Background from "./HiroList/Background";
-import Crowd from "./HiroList/Crowd";
 function ComparisonsHiro() {
-  const [tab, setTab] = useState("Background");
+  const [tab, setTab] = useState("Character");
   const lists = [
     {
-      name: "Shadow",
+      name: "Character",
     },
     {
       name: "Fight",
     },
     {
+      name: "Vibe",
+    },
+    {
       name: "Background",
-    },
-    {
-      name: "Crowd",
-    },
-    {
-      name: "Power",
-    },
-    {
-      name: "Danger",
-    },
-    {
-      name: "Face",
-    },
-    {
-      name: "Injured",
-    },
-    {
-      name: "Running",
     },
   ];
   return (
@@ -50,8 +33,8 @@ function ComparisonsHiro() {
         ))}
       </div>
       <div className="p-2">
-        {tab === "Background" && <Background />}
-        {tab === "Crowd" && <Crowd />}
+        {/* {tab === "Background" && <Background />}
+        {tab === "Crowd" && <Crowd />} */}
       </div>
     </div>
   );

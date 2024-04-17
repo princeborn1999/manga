@@ -17,27 +17,13 @@ function Collection() {
     const req = {
       name: inputValue
     }
-    
   }
-  const recommendBar = [
-    {
-      name: 'shadow',
-    },
-    {
-      name: 'fight'
-    }
-  ]
-  const list = [
-    {
-      imgName: "",
-    },
-    {
-      imgName: "",
-    },
-    {
-      imgName: "",
-    },
-  ];
+  const recommendBar = ['character','female','male',
+                        'background','ship','building','crowd',
+                        'fight','tree','fire','tsunami','boobs','punch',
+                        'vibe','danger','fast','running','dodge','dark skin',
+                        'forest','muscle','shadow','injuired','rough draft',
+                        ]
   return (
     <div className="w-full">
       {/* 一部分來自於 recommend那邊
@@ -60,10 +46,8 @@ function Collection() {
         />
         <button className="mx-2 p-2 bg-slate-200 rounded-lg" onClick={()=>clickToSearch()}>Search</button>
       </div>
-
-
       <div className="flex justify-center pt-48 text-2xl">
-        <p>Coming Soon</p>
+
       </div>
     </div>
   );
