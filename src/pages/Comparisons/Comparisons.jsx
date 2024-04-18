@@ -7,13 +7,6 @@ function Comparisons() {
   return (
     <div className="w-full h-full">
       <TopNavComponent />
-      {/* 
-        達露梅恩 - 拳願阿修羅
-        真島浩 - 妖精尾巴
-        鈴木央 - 七大罪
-        劇情作畫場景
-        路人
-    */}
       <Route exact path="/Comparisons">
         <ComparisonsSeries />
       </Route>

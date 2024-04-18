@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import ComparisonsDaromeon from "./ComparisonsDetail/ComparisonsDaromeon";
 import ComparisonsHiro from "./ComparisonsDetail/ComparisonsHiro";
-
+import ComparisonsOne from "./ComparisonsDetail/ComparisonsOne";
 function ComparisonsDetail() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -10,7 +10,7 @@ function ComparisonsDetail() {
     <div className="p-5">
       {author === "Daromeon" && <ComparisonsDaromeon />}
       {author === "Hiro Mashima" && <ComparisonsHiro />}
-      {author === "One" && <div>Coming soon!</div>}
+      {author === "One" && <ComparisonsOne />}
     </div>
   );
 }

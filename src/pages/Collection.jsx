@@ -1,21 +1,20 @@
 import TopNavComponent from "../components/TopNav";
-import axios from 'axios';
 import { useState, useEffect } from "react";
-import collectionCardService from "../services/collectionCard.service";
+// import collectionCardService from "../services/collectionCard.service";
 function Collection() {
   const [inputValue, setInputValue] = useState('');
+  const [selectedOption, setSelectedOption] = useState('All');
+
+  const handleOptionChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+
   useEffect(()=>{
-    //  一開始的首次全查詢
-    collectionCardService.getAllCard()
-      .then("Getting all card.")
-      .catch((err)=>{
-        console.error(err)
-      })
   },[])
 
   function clickToSearch(){
     const req = {
-      name: inputValue
+      name: inputValue ? inputValue : selectedOption
     }
   }
   const recommendBar = ['character','female','male',
@@ -31,15 +30,20 @@ function Collection() {
   */}
       <TopNavComponent />
       <div className="justify-center flex pt-5" aria-label="search-bar">
-        <label htmlFor="" className="text-2xl">filter  :</label>
-        <select className="appearance-none p-2">
-          <option>All</option>
-          <option>Shadow</option>
-          <option>Background</option>
-          <option>Crowd</option>
+        <label htmlFor="" className="text-2xl">Select  :</label>
+        <select className="appearance-none p-2 rounded-lg"
+                disabled={inputValue !== ''}
+                value={selectedOption}
+                onChange={handleOptionChange}
+                >
+          <option value="All" className="text-lg">All</option>
+          {recommendBar.map((option, index) => (
+            <option key={index} value={option}>{option}</option>
+          ))}
         </select>
         <input
           value={inputValue}
+          placeholder="Manual Entry"
           type="text"
           onChange={(e) => setInputValue(e.target.value)}
           className="w-48 border border-gray-300 mx-2 rounded-lg "
@@ -47,7 +51,6 @@ function Collection() {
         <button className="mx-2 p-2 bg-slate-200 rounded-lg" onClick={()=>clickToSearch()}>Search</button>
       </div>
       <div className="flex justify-center pt-48 text-2xl">
-
       </div>
     </div>
   );
