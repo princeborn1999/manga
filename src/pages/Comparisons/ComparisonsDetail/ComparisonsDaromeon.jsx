@@ -1,4 +1,9 @@
 import { useState } from "react";
+import Character from "./DaromeonList/Character";
+import Fight from "./DaromeonList/Fight";
+import Vibe from "./DaromeonList/Vibe";
+import Backgroud from "./DaromeonList/Background";
+import RoughDraft from "./DaromeonList/RoughDraft";
 function ComparisonsDaromeon() {
   const [tab, setTab] = useState("Character");
   const lists = [
@@ -36,12 +41,11 @@ function ComparisonsDaromeon() {
         ))}
       </div>
       <div className="p-2 w-4/5">
-        {/* {tab === "Shadow" && <Shadow />}
+        {tab === "Character" && <Character />}
         {tab === "Fight" && <Fight />}
-        {tab === "Background" && <Background />}
-        {tab === "Crowd" && <Crowd />}
-        {tab === "Danger" && <Danger />}
-        {tab === "Rough draft" && <RoughDraft />} */}
+        {tab === "Vibe" && <Vibe />}
+        {tab === "Background" && <Backgroud />}
+        {tab === "Rough draft" && <RoughDraft />}
       </div>
     </div>
   );

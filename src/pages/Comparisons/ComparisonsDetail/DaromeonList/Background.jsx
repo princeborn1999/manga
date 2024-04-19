@@ -1,28 +1,22 @@
-import bg01 from '../../../../assets/kengan/background/bg01.jpg'
-import bg03 from '../../../../assets/kengan/background/bg03.jpg'
-import bg04 from '../../../../assets/kengan/background/bg04.jpg'
-function Background(){
+import imageKenganSearchService from "../../../../services/imageKenganSearch.service"
+function Backgroud(){
+    const kBackgroudImages = imageKenganSearchService.getAllKbackgroud();
+    const kCrowdImages = imageKenganSearchService.getAllKcrowd();
     return(
         <div>
-            <p>
-                Daromeon keeps forest backgrounds simple by using common techniques like short lines,
-                 giving a sense of the forest without excessive detail.
-            </p>
-            <div className="flex">
-                <img className="w-96 p-2" src={bg03} alt="" />
+            <h2>Backgroud</h2>
+            <div>
+                {kBackgroudImages.map((image, index) => (
+                    <img key={index} className="w-96 p-2" src={image} alt={`K Backgroud ${index + 1}`} />
+                ))}
             </div>
-            <p>
-                In contrast to Hiro-san's approach of using only black lines and abundant white space for inner building scenes,
-                 Daromeon employs gradients but seldom use of pure black color.
-            </p>
-            <div className="flex">
-                <img className="w-96 p-2" src={bg04} alt="" />
-            </div>
-            <p>However, there are moments when Daromeon incorporates real photographs as background scenes</p>
-            <div className="flex">
-                <img className="w-96 p-2" src={bg01} alt="" />
+            <h2>Crowd</h2>
+            <div>
+                {kCrowdImages.map((image, index) => (
+                    <img key={index} className="w-96 p-2" src={image} alt={`K Backgroud ${index + 1}`} />
+                ))}
             </div>
         </div>
     )
 }
-export default Background
+export default Backgroud

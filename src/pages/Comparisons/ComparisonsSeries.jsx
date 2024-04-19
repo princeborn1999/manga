@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import kengan from '../../assets/comparison/kengan.jpg'
 import fairytail from '../../assets/comparison/fairytail.jpg'
-import onepunch from '../../assets/onepunch_origin/onepunch01.jpg'
+import onepunch from '../../assets/comparison/onepunch.jpg'
 function ComparisonsSeries() {
   const list = [
     {
