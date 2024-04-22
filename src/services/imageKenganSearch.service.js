@@ -45,6 +45,22 @@ import k_rough_03 from '../assets/kengan_asset/rough_draft/k_rough_03.jpg';
 import k_rough_04 from '../assets/kengan_asset/rough_draft/k_rough_04.jpg';
 
 class ImageKengaSearchService{
+    getAllK(){
+        return [
+            k_muscle_01,
+            k_shadow_02,k_shadow_03,k_shadow_04,k_shadow_05,
+            k_fight_01,k_fight_02,k_fight_03,k_fight_04,
+            k_fight_05,k_fight_06,k_fight_07,k_fight_08,
+            k_injured_01,k_injured_02,k_injured_03,k_injured_04,
+            k_injured_05,
+            k_vibe_01,k_vibe_02,k_vibe_03,k_vibe_04,k_vibe_05,
+            k_background_01,k_background_02,k_background_03,k_background_04,
+            k_crowd_01,k_crowd_02,k_crowd_03,k_crowd_04,
+            k_rough_01,k_rough_02,k_rough_03,k_rough_04,
+            k_action_01,k_action_02,
+            k_dodge_01
+        ]
+    }
     getAllKmuscle() {
         return [k_muscle_01];
     }

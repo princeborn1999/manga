@@ -29,6 +29,17 @@ import o_background_04 from '../assets/onepunch_asset/background/o_background_04
 import o_background_05 from '../assets/onepunch_asset/background/o_background_05.jpg'
 import o_background_06 from '../assets/onepunch_asset/background/o_background_06.jpg'
 class ImageOneSearchService{
+    getAllO(){
+        return [
+            o_character_01,
+            o_shadow_01,o_shadow_02,o_shadow_03,
+            o_fight_01,o_fight_02,o_fight_03,
+            o_injured_01,o_injured_02,
+            o_danger_01,o_danger_02,o_danger_03,o_danger_04,o_danger_05,
+            o_background_01,o_background_02,o_background_03,
+            o_background_04,o_background_05,o_background_06
+        ]
+    }
     getAllOcharacter() {
         return [o_character_01];
     }
