@@ -71,6 +71,12 @@ class ImageKengaSearchService{
     getAllKrough(){
         return [k_rough_01,k_rough_02,k_rough_03,k_rough_04]
     }
+    getAllKaction(){
+        return [k_action_01,k_action_02]
+    }
+    getAllKdodge(){
+        return [k_dodge_01]
+    }
     getKmuscle(imageNumber){
         switch (imageNumber) {
             case 1:

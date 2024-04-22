@@ -4,6 +4,7 @@ import Fight from "./DaromeonList/Fight";
 import Vibe from "./DaromeonList/Vibe";
 import Backgroud from "./DaromeonList/Background";
 import RoughDraft from "./DaromeonList/RoughDraft";
+import Action from "./DaromeonList/Action";
 function ComparisonsDaromeon() {
   const [tab, setTab] = useState("Character");
   const lists = [
@@ -12,6 +13,9 @@ function ComparisonsDaromeon() {
     },
     {
       name: "Fight",
+    },
+    {
+      name: "Action",
     },
     {
       name: "Vibe",
@@ -44,6 +48,7 @@ function ComparisonsDaromeon() {
         {tab === "Character" && <Character />}
         {tab === "Fight" && <Fight />}
         {tab === "Vibe" && <Vibe />}
+        {tab === "Action" && <Action />}
         {tab === "Background" && <Backgroud />}
         {tab === "Rough draft" && <RoughDraft />}
       </div>

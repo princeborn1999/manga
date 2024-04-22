@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Background from "./OneList/Background";
+import Fight from "./OneList/Fight";
+import Vibe from "./OneList/Vibe";
+import Character from "./OneList/Character";
 function ComparisonsOne() {
     const [tab, setTab] = useState("Character");
     const lists = [
@@ -33,8 +37,10 @@ function ComparisonsOne() {
           ))}
         </div>
         <div className="p-2">
-          {/* {tab === "Background" && <Background />}
-          {tab === "Crowd" && <Crowd />} */}
+          {tab === "Background" && <Background />}
+          {tab === "Fight" && <Fight />}
+          {tab === "Vibe" && <Vibe />}
+          {tab === "Character" && <Character />}
         </div>
       </div>
     );

@@ -7,9 +7,9 @@ import o_shadow_01 from '../assets/onepunch_asset/character/o_shadow_01.jpg'
 import o_shadow_02 from '../assets/onepunch_asset/character/o_shadow_02.jpg'
 import o_shadow_03 from '../assets/onepunch_asset/character/o_shadow_03.jpg'
 // fight
-import o_fight_01 from '../assets/onepunch_asset/character/o_fight_01.jpg'
-import o_fight_02 from '../assets/onepunch_asset/character/o_fight_02.jpg'
-import o_fight_03 from '../assets/onepunch_asset/character/o_fight_03.jpg'
+import o_fight_01 from '../assets/onepunch_asset/fight/o_fight_01.jpg'
+import o_fight_02 from '../assets/onepunch_asset/fight/o_fight_02.jpg'
+import o_fight_03 from '../assets/onepunch_asset/fight/o_fight_03.jpg'
 // injured
 import o_injured_01 from '../assets/onepunch_asset/fight/o_injured_01.jpg'
 import o_injured_02 from '../assets/onepunch_asset/fight/o_injured_02.jpg'
@@ -43,6 +43,10 @@ class ImageOneSearchService{
     }
     getAllOdanger() {
         return [o_danger_01,o_danger_02,o_danger_03,o_danger_04,o_danger_05];
+    }
+    getAllObackground() {
+        return [o_background_01,o_background_02,o_background_03,
+                o_background_04,o_background_05,o_background_06];
     }
     getOcharacter(imageNumber){
         switch (imageNumber) {

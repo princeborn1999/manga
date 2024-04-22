@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Background from "./HiroList/Backgroud";
+import Fight from "./HiroList/Fight";
+import Vibe from "./HiroList/Vibe";
+import Character from "./HiroList/Character";
 function ComparisonsHiro() {
   const [tab, setTab] = useState("Character");
   const lists = [
@@ -33,8 +37,10 @@ function ComparisonsHiro() {
         ))}
       </div>
       <div className="p-2">
-        {/* {tab === "Background" && <Background />}
-        {tab === "Crowd" && <Crowd />} */}
+        {tab === "Background" && <Background />}
+        {tab === "Vibe" && <Vibe />}
+        {tab === "Fight" && <Fight />}
+        {tab === "Character" && <Character />}
       </div>
     </div>
   );
