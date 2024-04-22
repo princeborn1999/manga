@@ -4,7 +4,8 @@ function Tips() {
     <div className="w-full">
       <TopNavComponent />
       <div className="flex justify-center pt-48 text-2xl">
-        <div>
+        COMING SOON!
+        {/* <div>
           <h1>How to draw shoulder?</h1>
           
           <h1>How to draw shadow?</h1>
@@ -18,8 +19,7 @@ function Tips() {
           <h1>How to draw girl & boy?</h1>
 
           <h1>How to draw animal?</h1>
-
-        </div>
+        </div> */}
       </div>
     </div>
   );

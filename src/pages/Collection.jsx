@@ -15,7 +15,7 @@ function Collection() {
   useEffect(()=>{
     console.log(selectedOption)
     switch (selectedOption){
-      case 'all':
+      case 'All':
         setImageSet([
           ...imageKenganSearchService.getAllK(),
           ...imageFairyTailSearchService.getAllF(),
@@ -56,7 +56,7 @@ function Collection() {
                 value={selectedOption}
                 onChange={handleOptionChange}
                 >
-          <option value="all" className="text-lg">All</option>
+          <option value="All" className="text-lg">All</option>
           {recommendBar.map((option, index) => (
             <option key={index} value={option}>{option}</option>
           ))}
